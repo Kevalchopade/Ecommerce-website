@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  #forgotPasswordContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Dim background */
+    display: none; /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  #forgotPasswordContainer .popup {
+    background-color: #ffffff;
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px 25px 30px 25px;
+    text-align: center;
+  }
+  
+  #forgotPasswordContainer button{
+  color: white;
+  font-size: 15px;
+  font-style: 'Spartan';
+  background-color: #30475e;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 12px;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  width: 100%;
+  }
+  
+  #forgotPasswordContainer h2{
+  font-size: 22px;
+  justify-self: center;
+  margin-bottom: -5px;
+  }
+  
+  #forgotPasswordContainer p {
+  text-align: left;
+  }
+  
+  #resetPasswordContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 350px;
+  }
+  
+  #resetPasswordContainer input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #30475e;
+  background: transparent;
+  }
+  
+  #resetPasswordContainer h2{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #1e2d44;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+  }
+  
+  #resetPasswordContainer button {
+  color: white;
+  font-size: 15px;
+  background-color: #30475e;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 12px;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  width: 100%;
+  }
+  
+  #resetPasswordContainer .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  }
+  
+  
+  .popup {
+    position: relative;
+  }
+  
+  
+  .login-heading{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;  
+    color: #1e2d44;  /* Match the register popup */
+    margin-bottom: -20px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+  }
+  
+  .login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .forgot-password {
+    color: black;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .create-account {
+    color: black;
+    margin-top: 15px; 
+    margin-right: 4.5px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  
+  header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #30475e;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header nav a{
+    color: white;
+    margin-right: 30px;
+    font-weight: 500;
+  }
+  
+  header div.sign-in-up button{
+    background-color: #75cfb8;
+    font-size: 16px;
+    font-weight: 550;
+    padding: 4px 12px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 20px;
+  }
+  
+  header div.sign-in-up button:last-child{
+    background-color: #fa9579;
+  }
+  
+  div.popup-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  
+  div.popup-container div.popup{
+    background-color: #ffffff;
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px 25px 30px 25px;
+  }
+  
+  div.popup-container div.popup h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: #30475e;
+  }
+  
+  div.popup-container div.popup h2 button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-weight: 550;
+    color: #797775;
+  }
+  
+  div.popup-container div.popup input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #30475e;
+    background: transparent;
+  }
+  
+  div.popup-container div.popup button.login-btn,div.popup-container div.register button.register-btn{
+    color: white;
+    font-size: 15px;
+  
+    background-color: #30475e;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 12px;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  div.popup-container div.register{
+    background-color: #edeef7;
+  }
+  
+  div.popup-container div.register h2{
+    color: #fa9579;
+  }
+  
+  div.popup-container div.register input{
+    border-bottom-color: #fa9579;
+  }
+  
+  div.popup-container div.register button.register-btn{
+    background-color: #fa9579;
+  }
+  
+  div.user{
+    color: #30475e;
+    background-color: #75cfb8;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  
+  div.user a{
+    color: #30475e;
+  }
+  
+  
+  
+  
+  /* Registration Popup - Isolated CSS */
+  .register-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff; /* Use a neutral color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    z-index: 1000;
+  }
+  
+  .register-popup-content {
+    text-align: center;
+  }
+  
+  .register-popup h2 {
+    color: #1e2d44;
+    font-size: 22px;
+  }
+  
+  .register-popup input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #30475e;
+    background: transparent;
+  }
+  
+  .register-popup button {
+    background: #30475e;
+    margin-top: 10px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;    
+  }
+  

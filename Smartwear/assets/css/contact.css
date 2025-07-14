@@ -1,0 +1,155 @@
+/* Form container */
+form {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .contact-form-container {
+    max-width: 800px;  /* Adjust the width */
+    margin: 20px auto; /* Centers the form on the page */
+    padding: 30px;
+    background: #fff; /* White background */
+    border: 1.5px solid ; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .contact-info {
+    text-align: center; /* Centers text inside the container */
+    max-width: 800px; /* Adjust width if needed */
+    margin: 0 auto; /* Centers the container itself */
+  }
+  
+  .contact-info h1 {
+    font-size: 36px; /* Adjust size if needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds spacing below the heading */
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 80px;
+  }
+  
+  /* Single field (Full Name) */
+  .full-name-container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Grouped fields (Email & Phone, Country & City) */
+  .form-group {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .form-group div {
+    width: 50%;
+  }
+  
+  /* Input fields */
+  input, select, textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    background: transparent;
+    font-size: 16px;
+  }
+  
+  /* Input focus effect */
+  input:focus, textarea:focus {
+    border-bottom: 1px solid #333;
+    outline: none;
+  }
+  
+  .phone-input-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    position: relative;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .country-code {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    cursor: pointer;
+    width: 80px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  
+  .phone-number-input {
+    flex: 1; /* Ensures input takes remaining space */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+  }
+  
+  .phone-container {
+    display: flex;
+    flex-direction: column; /* Stack label above input */
+  }
+  
+  .phone-input {
+    display: flex;
+    align-items: center; /* Align country code and input field */
+    gap: 10px; /* Add space between country code dropdown and phone number field */
+  }
+  
+  .phone-input select {
+    padding: 8px;
+    width: 100px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .phone-input input {
+    flex-grow: 1;
+    width: 300px; /* Allow input to take remaining space */
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  /* Style for form labels */
+  label {
+    display: block; /* Moves label to a new line above the input */
+    font-size: 16px; /* Adjust font size to match the image */
+    font-weight: 500; /* Medium weight */
+    color: #000000; /* Dark text for better visibility */
+    margin-bottom: 5px; /* Creates spacing between label and input */
+  }
+  
+  #phone-number-label{
+    margin-left: 110px;
+  }
+  
+  .submit-button{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  
+  
+  

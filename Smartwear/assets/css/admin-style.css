@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Admin Navbar */
+  #admin-navbar {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .admin-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .admin-nav-left h2 {
+    font-size: 20px;
+  }
+  
+  .admin-nav-tabs {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .admin-nav-tabs li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+  }
+  
+  .admin-nav-tabs li a:hover,
+  .admin-nav-tabs li a.active {
+    background-color: #444;
+  }
+  
+  .admin-nav-right .exit-btn {
+    color: #fff;
+    text-decoration: none;
+    background: crimson;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .admin-nav-right .exit-btn:hover {
+    background-color: darkred;
+  }
+  
+  /* Product Management Page */
+  .container {
+    padding: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  table th,
+  table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #eee;
+  }
+  
+  .product-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .action-buttons a {
+    margin: 0 5px;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .action-buttons .edit-btn {
+    background-color: #007bff;
+  }
+  
+  .action-buttons .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .action-buttons .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .action-buttons .delete-btn:hover {
+    background-color: #a80000;
+  }
+  
+  /* Add Product Button */
+  .add-product-btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .add-product-btn:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Add Product Popup */
+  .popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  .popup-form h3 {
+    margin-bottom: 20px;
+  }
+  
+  .popup-form form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .popup-form form input,
+  .popup-form form select,
+  .popup-form form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .popup-form form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .popup-form form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    background-color: #dc3545;
+    float: right;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-top: -10px;
+    margin-right: -10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background-color: #a80000;
+  }
+  .page-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.order-table-container {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-table img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.update-btn {
+    background: #4CAF50;
+    border: none;
+    padding: 5px 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.update-btn:hover {
+    background-color: #45a049;
+}
+
+select {
+    padding: 5px;
+    margin-right: 8px;
+}

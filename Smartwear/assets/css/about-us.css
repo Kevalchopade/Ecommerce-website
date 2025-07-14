@@ -1,0 +1,119 @@
+/* About Us Page */
+
+#page-header.about-header {
+    background-image: url("img/about/banner.png");
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+#about-head .website-description{
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* Team Members Section - Completely redesigned */
+#about-team {
+    padding: 60px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about-team .team-member-heading {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: black;
+    text-align: center;
+}
+
+#about-team .team-member {
+    display: flex;
+    margin-bottom: 80px;
+    align-items: flex-start;
+}
+
+#about-team .member-img {
+    flex: 0 0 250px;
+    margin-right: 60px;
+    position: relative;
+}
+
+#about-team .member-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+    border: 5px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about-team .member-details {
+    flex: 1;
+    padding-top: 15px;
+}
+
+#about-team .member-details h4 {
+    font-size: 28px;
+    margin: 0 0 5px 0;
+    color: #222;
+}
+
+#about-team .member-details h5 {
+    font-size: 18px;
+    color: #666;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+}
+
+#about-team .member-details p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    #about-team {
+        padding: 40px 30px;
+    }
+    
+    #about-team .team-member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #about-team .member-img {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #about-team .member-img {
+        flex: 0 0 200px;
+    }
+    
+    #about-team .member-img img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #about-team .team-member-heading {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+}

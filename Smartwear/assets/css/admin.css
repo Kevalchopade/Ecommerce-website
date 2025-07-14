@@ -1,0 +1,300 @@
+/* Main Admin Styles - Combined and Updated */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+/* Top Navigation Bar (Header) */
+#header {
+  background-color: #eef1f6;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header img {
+  height: 40px;
+}
+
+#navbar {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Admin Panel Navigation */
+#admin-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 50px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.admin-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.admin-nav-left h2 {
+  color: #008674;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.admin-nav-tabs {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-nav-tabs li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.admin-nav-tabs li a.active {
+  background-color: #008674;
+  color: white;
+}
+
+.admin-nav-tabs li a:hover:not(.active) {
+  background-color: #f2f2f2;
+}
+
+.exit-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.exit-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Main Content Styling */
+.admin-content, #admin-content, .section-p1 {
+  padding: 30px 50px;
+}
+
+/* Table Styling - Clean Modern Look */
+.admin-table, table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.admin-table th, .admin-table td,
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: none; /* Remove bottom border for all table cells */
+}
+
+.admin-table th,
+table th {
+  background-color: #e0e0e0;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Ensure all tables use consistent styling */
+th {
+  background-color: #e0e0e0 !important;
+  color: #222 !important;
+  border-bottom: none !important;
+}
+
+td {
+  border-bottom: none !important; /* Force no borders on all table cells */
+}
+
+.admin-table tr:hover,
+table tr:hover {
+  background-color: #f5f9fc;
+}
+
+/* Card Layout for Dashboard Panels */
+.dashboard-welcome {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+/* Page Heading Styles */
+.page-heading, h2.page-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Button Styles */
+.update-btn, button[type="submit"], .edit-btn {
+  background-color: #008674;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.update-btn:hover, button[type="submit"]:hover, .edit-btn:hover {
+  background-color: #006a59;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Form Controls */
+input[type="text"], 
+input[type="number"], 
+input[type="email"], 
+input[type="password"],
+select, 
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+select {
+  padding: 10px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  padding-right: 30px;
+}
+
+.add-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 24px;
+  background-color: #008674; /* Changed to match your theme color from admin.css */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 900; /* Ensures button stays above other elements */
+}
+
+.add-btn:hover {
+  transform: scale(1.1);
+  background-color: #006a59; /* Darker shade on hover */
+}
+
+.add-btn:active {
+  transform: scale(0.95);
+}
+
+/* Popup Styling */
+#addProductPopup > div {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  width: 500px;
+  max-width: 90%;
+  padding: 25px;
+}
+
+/* Product Images */
+table img, .admin-table img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #header, #admin-navbar {
+      padding: 15px 20px;
+  }
+  
+  .admin-nav-container {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .admin-nav-tabs {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  
+  .admin-content, #admin-content, .section-p1 {
+      padding: 20px;
+  }
+  
+  .admin-table th, .admin-table td,
+  table th, table td {
+      padding: 10px 8px;
+      font-size: 14px;
+  }
+}
